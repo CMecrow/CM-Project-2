@@ -1,7 +1,7 @@
 # Clarity
 As a developer, I've been tasked with creating a website that houses a mindfulness game built with JavaScript, giving the user a calming and pleasant experience.
 
-Please see UX document [here]() for further information on background and initial design brief, along with initial wireframe concepts [here]().
+Please see UX document available [here]() for further information on background and initial design brief, along with initial wireframe concepts [here]().
 
 ---
 
