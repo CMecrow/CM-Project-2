@@ -1,0 +1,41 @@
+/*Google fonts, Montserrat regular 400, Quicksand regular 400.*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background-color: black;
+}
+
+/*Header styling*/
+#title a {
+    text-decoration: none;
+    color: white;
+}
+
+#title {
+    font-family: 'Montserrat';
+    font-size: 300%;   
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 1%; 
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+#logo {
+    height: 20px;
+    width: auto;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 0.5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
