@@ -76,12 +76,21 @@ hr:before {
 .selection {
     height: 30px;
     width: 60px;
-    background-color: pink;
     cursor: pointer;
 }
 
-#selection-two, #selection-three {
+#selection-one {
+    background-image: url(../images/forestb.jpg);
+}
+
+#selection-two {
     margin-left: 20px;
+    background-image: url(../images/mountainsb.jpg);
+}
+
+#selection-three {
+    margin-left: 20px;
+    background-image: url(../images/beachb.jpg);
 }
 
 .heading2 {
