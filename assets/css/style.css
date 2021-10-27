@@ -124,13 +124,17 @@ hr:before {
     width: 90%;
     overflow: hidden;
     height: 60vh;
+    /*
     background-image: url(../images/frost.webp);
+    */
+    background-color: pink;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #canvas-image {
     background: transparent;
+    width: 100%;
 }
 
 #game-instructions {
