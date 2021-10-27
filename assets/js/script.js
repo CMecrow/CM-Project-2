@@ -4,6 +4,7 @@ var ctx = canvas.getContext('2d');
 var img = new Image();
 img.src = url;
 
+/**Gets width and height of frost image, displays image*/
 img.onload = function () {
   var width =  img.width;
   var height = img.height;
@@ -21,15 +22,17 @@ canvas.addEventListener('mousedown', function (e){
 });
 canvas.addEventListener('mousemove', function (e){
   if (isPress) {
+    var status = document.getElementById("co");
     var x = e.offsetX;
     var y = e.offsetY;
     ctx.globalCompositeOperation = 'destination-out';
+    status.innerHTML = x+" | "+y;
 
     ctx.beginPath();
-    ctx.arc(x, y, 10, 0, 2 * Math.PI);
+    ctx.arc(x, y, 30, 0, 2 * Math.PI);
     ctx.fill();
 
-    ctx.lineWidth = 20;
+    ctx.lineWidth = 60;
     ctx.beginPath();
     ctx.moveTo(old.x, old.y);
     ctx.lineTo(x, y);
