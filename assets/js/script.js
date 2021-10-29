@@ -1,5 +1,4 @@
-var forestImage = "../assets/images/forest.webp";
-var url = "../assets/images/frost.webp";
+var url = "./assets/images/frost.webp";
 var canvas = document.getElementById("canvas-image");
 var ctx = canvas.getContext('2d');
 var img = new Image();
