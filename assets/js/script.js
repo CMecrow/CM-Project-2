@@ -5,34 +5,46 @@ var img = new Image();
 img.src = url;
 
 /**Gets width and height of frost image, displays image*/
+/*
 img.onload = function () {
   var width =  img.width;
   var height = img.height;
 
   canvas.width = width;
   canvas.height = height;
-  ctx.drawImage(img, 0, 0, width, height);
+  ctx.drawImage(img, 0, 0);
 };
-
+*/
+/**Gets width and height from the parent div along with positioning, draws image*/
+img.onload = function() {
+  canvas = document.getElementById('canvas-image');
+  canvas.setAttribute('width', canvas.parentNode.offsetWidth);
+  canvas.setAttribute('height', canvas.parentNode.offsetHeight);
+  ctx = canvas.getContext("2d");
+  w = ctx.clientWidth;
+  h = ctx.clientHeight;
+  ctx.drawImage(img, 0, 0);
+}
+//isPress is false so that the effect only occurs when the mousedown event is active
 var isPress = false;
 var old = null;
 canvas.addEventListener('mousedown', function (e){
   isPress = true;
-  old = {x: e.offsetX, y: e.offsetY};
+  old = {x: e.clientX - ctx.canvas.offsetLeft, y: e.clientY - ctx.canvas.offsetTop};
 });
 canvas.addEventListener('mousemove', function (e){
   if (isPress) {
     var status = document.getElementById("co");
-    var x = e.offsetX;
-    var y = e.offsetY;
+    var x = e.clientX - ctx.canvas.offsetLeft;
+    var y = e.clientY - ctx.canvas.offsetTop;
     ctx.globalCompositeOperation = 'destination-out';
     status.innerHTML = x+" | "+y;
 
     ctx.beginPath();
-    ctx.arc(x, y, 30, 0, 2 * Math.PI);
+    ctx.arc(x, y, 40, 0, 2 * Math.PI);
     ctx.fill();
 
-    ctx.lineWidth = 60;
+    ctx.lineWidth = 80;
     ctx.beginPath();
     ctx.moveTo(old.x, old.y);
     ctx.lineTo(x, y);

@@ -7,6 +7,8 @@ Please see UX document available [here]() for further information on background 
 
 ## Features
 - ### Site header
+- Site name 'Clarity' is central to the page to be the main initial focus. This is to provide a memorable and recognisable name / brand.
+- A small image of a lotus flower was included to provide a logo to run through the site and also be included as a favicon for the page.
 - Header includes a styled hr element to add more structure to the page, rather than the header bleeding into the page without any distinction eg colour changes. The code was taken and adjusted in colour from [this](https://stackoverflow.com/questions/9437400/css-fade-out-horizontal-rule-line-styled-div-effect-without-images) Stackoverflow page, linking to [this](http://jsfiddle.net/andresilich/fZNbK/1/) demo.
 
 - ### Mindfulness JavaScript Game
