@@ -1,3 +1,4 @@
+var forestImage = "../assets/images/forest.webp";
 var url = "../assets/images/frost.webp";
 var canvas = document.getElementById("canvas-image");
 var ctx = canvas.getContext('2d');
@@ -67,17 +68,17 @@ let beachButton = document.getElementById("selection-three");
 // Forest button
 forestButton.addEventListener("click", function() {
     document.getElementById("theme-selected").innerHTML= "Forest";
-    document.getElementById("game-area").style.backgroundImage="url(../assets/images/forest2.webp)"; 
+    document.getElementById("game-area").style.backgroundImage="url(./assets/images/forest.webp)"; 
 })
 
 // Mountain button
 mountainButton.addEventListener("click", function() {
     document.getElementById("theme-selected").innerHTML= "Mountains";
-    document.getElementById("game-area").style.backgroundImage="url(../assets/images/mountains2.webp)"; 
+    document.getElementById("game-area").style.backgroundImage="url(./assets/images/mountains.webp)"; 
 })
 
 // Beach button
 beachButton.addEventListener("click", function() {
     document.getElementById("theme-selected").innerHTML= "Beach";
-    document.getElementById("game-area").style.backgroundImage="url(../assets/images/beach5.webp)"; 
+    document.getElementById("game-area").style.backgroundImage="url(./assets/images/beach.webp)"; 
 })

@@ -124,10 +124,7 @@ hr:before {
     width: 90%;
     overflow: hidden;
     height: 60vh;
-    /*
-    background-image: url(../images/frost.webp);
-    */
-    background-color: pink;
+    background-image: url(./assets/images/frost.webp);    
     background-repeat: no-repeat;
     background-position: center;
 }
