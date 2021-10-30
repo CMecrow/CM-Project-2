@@ -1,3 +1,4 @@
+//Variables for frost image onto canvas
 var url = "./assets/images/frost.webp";
 var canvas = document.getElementById("canvas-image");
 var ctx = canvas.getContext('2d');
@@ -16,7 +17,7 @@ img.onload = function () {
 };
 */
 /**Gets width and height from the parent div along with positioning, draws image*/
-img.onload = function() {
+img.onload = function frostImage() {
   canvas = document.getElementById('canvas-image');
   canvas.setAttribute('width', canvas.parentNode.offsetWidth);
   canvas.setAttribute('height', canvas.parentNode.offsetHeight);
@@ -54,30 +55,52 @@ canvas.addEventListener('mousemove', function (e){
 
   }
 });
+
+// No longer drawing when mouse isn't pressed
 canvas.addEventListener('mouseup', function (e){
   isPress = false;
 });
 
 // Variables for buttons to select themes
-
 let forestButton = document.getElementById("selection-one");
 let mountainButton = document.getElementById("selection-two");
 let beachButton = document.getElementById("selection-three");
 
 // Forest button
 forestButton.addEventListener("click", function() {
-    document.getElementById("theme-selected").innerHTML= "Forest";
-    document.getElementById("game-area").style.backgroundImage="url(./assets/images/forest.webp)"; 
+  canvas = document.getElementById('canvas-image');
+  canvas.setAttribute('width', canvas.parentNode.offsetWidth);
+  canvas.setAttribute('height', canvas.parentNode.offsetHeight);
+  ctx = canvas.getContext("2d");
+  w = ctx.clientWidth;
+  h = ctx.clientHeight;
+  ctx.drawImage(img, 0, 0);
+  document.getElementById("theme-selected").innerHTML= "Forest";
+  document.getElementById("game-area").style.backgroundImage="url(./assets/images/forest.webp)"; 
 })
 
 // Mountain button
 mountainButton.addEventListener("click", function() {
-    document.getElementById("theme-selected").innerHTML= "Mountains";
-    document.getElementById("game-area").style.backgroundImage="url(./assets/images/mountains.webp)"; 
+  canvas = document.getElementById('canvas-image');
+  canvas.setAttribute('width', canvas.parentNode.offsetWidth);
+  canvas.setAttribute('height', canvas.parentNode.offsetHeight);
+  ctx = canvas.getContext("2d");
+  w = ctx.clientWidth;
+  h = ctx.clientHeight;
+  ctx.drawImage(img, 0, 0);
+  document.getElementById("theme-selected").innerHTML= "Mountains";
+  document.getElementById("game-area").style.backgroundImage="url(./assets/images/mountains.webp)"; 
 })
 
 // Beach button
 beachButton.addEventListener("click", function() {
-    document.getElementById("theme-selected").innerHTML= "Beach";
-    document.getElementById("game-area").style.backgroundImage="url(./assets/images/beach.webp)"; 
+  canvas = document.getElementById('canvas-image');
+  canvas.setAttribute('width', canvas.parentNode.offsetWidth);
+  canvas.setAttribute('height', canvas.parentNode.offsetHeight);
+  ctx = canvas.getContext("2d");
+  w = ctx.clientWidth;
+  h = ctx.clientHeight;
+  ctx.drawImage(img, 0, 0);
+  document.getElementById("theme-selected").innerHTML= "Beach";
+  document.getElementById("game-area").style.backgroundImage="url(./assets/images/beach.webp)"; 
 })
