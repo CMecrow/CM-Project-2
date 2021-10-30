@@ -35,11 +35,9 @@ canvas.addEventListener('mousedown', function (e){
 });
 canvas.addEventListener('mousemove', function (e){
   if (isPress) {
-    var status = document.getElementById("co");
     var x = e.clientX - ctx.canvas.offsetLeft;
     var y = e.clientY - ctx.canvas.offsetTop;
     ctx.globalCompositeOperation = 'destination-out';
-    status.innerHTML = x+" | "+y;
 
     ctx.beginPath();
     ctx.arc(x, y, 40, 0, 2 * Math.PI);

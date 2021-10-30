@@ -11,6 +11,19 @@ body {
     background-color: black;
     color: white;
     font-family: 'Montserrat';
+    height: 100vh;
+}
+
+/*Included to stop text being highlighted is the user clicks and drags their cursor off the canvas element.
+Credited in testing.md*/
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
 }
 
 /*Header styling*/
@@ -123,7 +136,7 @@ hr:before {
     margin-right: 5%;
     width: 90%;
     overflow: hidden;
-    height: 60vh;
+    height: 55vh;
     background-image: url(../images/frost.webp);    
     background-repeat: no-repeat;
     background-position: center;

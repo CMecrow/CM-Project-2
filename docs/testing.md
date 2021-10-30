@@ -3,6 +3,9 @@
 ## Colour choice
 - I decided to use a black background to maximise contrast on the site, both for accessiblity and to fit the theme of the site, clarity. The white text really jumps out on a black background and lends itself to a minimalistic page, which had always been the plan from the wireframes.
 
+## Text
+- I quickly found through testing that there must be some way of blocking text on the sight being highlighted by the user, should their cursor move out of the canvas element while the mouse is clicked. I found a way of implementing this through css, documented [here](https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting).
+
 ## Header
 - I hadn't planned on using any sort of image or logo, instead keeping the header as just the site title 'Clarity'. However the site lacked a certain appeal without an image in the header so I found a simple image of a lotus flower to act as both a small image below the site title, and as a favicon for the site.
 - The original plan had been to have a line displayed underneath the site tital right across the page, but this again looked a bit cold and not very attractive so I found a solution to implement a gradient across the line which made the overall appearance more pleasing.

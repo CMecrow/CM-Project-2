@@ -19,8 +19,8 @@
 <body>
     <!--Site header containing site name / logo-->
     <header>
-        <h1 id="title" class="title-underline"><a href="index.html">Clarity</a></h1>
-        <img id="logo" src="assets/images/lotuslogo.png" alt="">
+        <h1 id="title" class="title-underline no-select"><a href="index.html">Clarity</a></h1>
+        <img id="logo" class="no-select" src="assets/images/lotuslogo.png" alt="">
         <hr>
     </header>
     <!--Buttons area-->
@@ -29,16 +29,17 @@
         <button class ="selection" id="selection-two"></button>
         <button class ="selection" id="selection-three"></button>
     </div>
-    <h2 class="heading2" id="selection-text">Where shall we unwind today?</h2>
+    <h2 class="heading2 no-select" id="selection-text">Where shall we unwind today?</h2>
     <div id="theme-choice">
-        <h2 class="heading2 choice" id="theme-selected"></h2>
+        <h2 class="heading2 choice no-select" id="theme-selected"></h2>
     </div>
     <!--Game area-->
     <div id="game-area">
         <canvas id="canvas-image"></canvas>
     </div>
-    <h2 class="heading2" id="game-instructions">Click and drag your mouse to clear the window and reveal the image beneath</h2>
-    <h2 id="co">0 | 0</h2>
+    <h2 class="heading2 no-select" id="game-instructions">Click and drag your mouse to clear the window and reveal the image beneath</h2>
+    
+
     
     <script src="assets/js/script.js"></script>
 </body>
