@@ -63,6 +63,7 @@ canvas.addEventListener('mouseup', function (e){
 let forestButton = document.getElementById("selection-one");
 let mountainButton = document.getElementById("selection-two");
 let beachButton = document.getElementById("selection-three");
+let resetButton = document.getElementById("reset")
 
 // Forest button
 forestButton.addEventListener("click", function() {
@@ -101,4 +102,15 @@ beachButton.addEventListener("click", function() {
   ctx.drawImage(img, 0, 0);
   document.getElementById("theme-selected").innerHTML= "Beach";
   document.getElementById("game-area").style.backgroundImage="url(./assets/images/beach.webp)"; 
+})
+
+//Reset button
+resetButton.addEventListener("click", function() {
+  canvas = document.getElementById('canvas-image');
+  canvas.setAttribute('width', canvas.parentNode.offsetWidth);
+  canvas.setAttribute('height', canvas.parentNode.offsetHeight);
+  ctx = canvas.getContext("2d");
+  w = ctx.clientWidth;
+  h = ctx.clientHeight;
+  ctx.drawImage(img, 0, 0);
 })
