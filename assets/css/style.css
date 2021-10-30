@@ -87,13 +87,14 @@ hr:before {
     align-content: center;
 }
 .selection {
-    height: 30px;
-    width: 60px;
+    height: 40px;
+    width: 80px;
     cursor: pointer;
 }
 
 #selection-one {
     background-image: url(../images/forestb.jpg);
+    background-color: pink;
 }
 
 #selection-two {
@@ -103,7 +104,7 @@ hr:before {
 
 #selection-three {
     margin-left: 20px;
-    background-image: url(../images/beachb.jpg);
+    background-image: url(../images/beachb.jpg); 
 }
 
 .heading2 {
@@ -130,6 +131,7 @@ hr:before {
 
 /*Game area*/
 #game-area {
+    cursor: pointer;
     display: flex;
     margin-top: 1%;
     margin-left: 5%;
@@ -147,10 +149,25 @@ hr:before {
     width: 100%;
 }
 
+/*Instructions and reset button*/
 #game-instructions {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
+}
+
+#reset-area {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#reset {
+    background-color: pink;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
 }
 
 
