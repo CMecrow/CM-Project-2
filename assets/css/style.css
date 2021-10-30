@@ -85,16 +85,31 @@ hr:before {
     display: flex;
     justify-content: center;
     align-content: center;
+    padding-bottom: 4px;
 }
 .selection {
     height: 40px;
     width: 80px;
     cursor: pointer;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 2px 15px rgba(255, 255, 255, 0.5);
+}
+
+#selection-one:hover {
+    box-shadow: 0px 4px 15px rgba(34, 139, 34, 1);
+}
+
+#selection-two:hover {
+    box-shadow: 0px 4px 15px rgba(0, 191, 255, 1);
+}
+
+#selection-three:hover {
+    box-shadow: 0px 4px 15px rgba(255, 215, 0, 1);
 }
 
 #selection-one {
     background-image: url(../images/forestb.jpg);
-    background-color: pink;
 }
 
 #selection-two {
@@ -164,11 +179,11 @@ hr:before {
 }
 
 #reset {
-    background-color: pink;
-    cursor: pointer;
-    width: 80px;
-    height: 40px;
     font-size: 150%;
+}
+
+#reset:hover {
+    box-shadow: 0px 4px 15px rgba(0, 191, 255, 1);
 }
 
 
