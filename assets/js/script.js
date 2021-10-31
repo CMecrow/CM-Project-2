@@ -5,19 +5,8 @@ var ctx = canvas.getContext('2d');
 var img = new Image();
 img.src = url;
 
-/**Gets width and height of frost image, displays image*/
-/*
-img.onload = function () {
-  var width =  img.width;
-  var height = img.height;
-
-  canvas.width = width;
-  canvas.height = height;
-  ctx.drawImage(img, 0, 0);
-};
-*/
 /**Gets width and height from the parent div along with positioning, draws image*/
-img.onload = function frostImage() {
+img.onload = function() {
   canvas = document.getElementById('canvas-image');
   canvas.setAttribute('width', canvas.parentNode.offsetWidth);
   canvas.setAttribute('height', canvas.parentNode.offsetHeight);
@@ -29,10 +18,12 @@ img.onload = function frostImage() {
 //isPress is false so that the effect only occurs when the mousedown event is active
 var isPress = false;
 var old = null;
+
 canvas.addEventListener('mousedown', function (e){
   isPress = true;
   old = {x: e.clientX - ctx.canvas.offsetLeft, y: e.clientY - ctx.canvas.offsetTop};
 });
+
 canvas.addEventListener('mousemove', function (e){
   if (isPress) {
     var x = e.clientX - ctx.canvas.offsetLeft;

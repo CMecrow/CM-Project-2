@@ -6,6 +6,9 @@
 ## Text
 - I quickly found through testing that there must be some way of blocking text on the sight being highlighted by the user, should their cursor move out of the canvas element while the mouse is clicked. I found a way of implementing this through css, documented [here](https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting). A possible downside of this would be that the small amount of text is now not easily copied and pasted into some sort of translate service should the user not be a native speaker.
 
+## Page size
+- Because on a mobile or any touch device, the user would be holding their finger or stylus down on the page, any scrolling present was going to quickly create an issue. To remedy this I applied a height of 100% on both the body and html, with an overflow of hidden.
+
 ## Header
 - I hadn't planned on using any sort of image or logo, instead keeping the header as just the site title 'Clarity'. However the site lacked a certain appeal without an image in the header so I found a simple image of a lotus flower to act as both a small image below the site title, and as a favicon for the site.
 - The original plan had been to have a line displayed underneath the site tital right across the page, but this again looked a bit cold and not very attractive so I found a solution to implement a gradient across the line which made the overall appearance more pleasing.
