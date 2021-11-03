@@ -11,10 +11,8 @@ img.onload = function frostImage() {
   canvas.setAttribute('width', canvas.parentNode.offsetWidth);
   canvas.setAttribute('height', canvas.parentNode.offsetHeight);
   ctx = canvas.getContext("2d");
-  w = ctx.clientWidth;
-  h = ctx.clientHeight;
   ctx.drawImage(img, 0, 0);
-}
+};
 
 //isPress is false so that the effect only occurs when the mousedown event is active
 var isPress = false;
@@ -95,13 +93,13 @@ canvas.addEventListener('touchend', function (e){
 });
 
 // Variables for buttons to select themes
-let forestButton = document.getElementById("selection-one");
-let mountainButton = document.getElementById("selection-two");
-let beachButton = document.getElementById("selection-three");
-let resetButton = document.getElementById("reset");
-let helpButton = document.getElementById("help");
-let closeButton = document.getElementById("close-help")
-let clickOff = document.getElementById("overlay-one")
+var forestButton = document.getElementById("selection-one");
+var mountainButton = document.getElementById("selection-two");
+var beachButton = document.getElementById("selection-three");
+var resetButton = document.getElementById("reset");
+var helpButton = document.getElementById("help");
+var closeButton = document.getElementById("close-help");
+var clickOff = document.getElementById("overlay-one");
 
 // Forest button
 forestButton.addEventListener("click", function() {
@@ -109,12 +107,10 @@ forestButton.addEventListener("click", function() {
   canvas.setAttribute('width', canvas.parentNode.offsetWidth);
   canvas.setAttribute('height', canvas.parentNode.offsetHeight);
   ctx = canvas.getContext("2d");
-  w = ctx.clientWidth;
-  h = ctx.clientHeight;
   ctx.drawImage(img, 0, 0);
   document.getElementById("theme-selected").innerHTML= "Forest";
   document.getElementById("game-area").style.backgroundImage="url(./assets/images/forest.webp)"; 
-})
+});
 
 // Mountain button
 mountainButton.addEventListener("click", function() {
@@ -122,12 +118,10 @@ mountainButton.addEventListener("click", function() {
   canvas.setAttribute('width', canvas.parentNode.offsetWidth);
   canvas.setAttribute('height', canvas.parentNode.offsetHeight);
   ctx = canvas.getContext("2d");
-  w = ctx.clientWidth;
-  h = ctx.clientHeight;
   ctx.drawImage(img, 0, 0);
   document.getElementById("theme-selected").innerHTML= "Mountains";
   document.getElementById("game-area").style.backgroundImage="url(./assets/images/mountains.webp)"; 
-})
+});
 
 // Beach button
 beachButton.addEventListener("click", function() {
@@ -135,12 +129,10 @@ beachButton.addEventListener("click", function() {
   canvas.setAttribute('width', canvas.parentNode.offsetWidth);
   canvas.setAttribute('height', canvas.parentNode.offsetHeight);
   ctx = canvas.getContext("2d");
-  w = ctx.clientWidth;
-  h = ctx.clientHeight;
   ctx.drawImage(img, 0, 0);
   document.getElementById("theme-selected").innerHTML= "Beach";
   document.getElementById("game-area").style.backgroundImage="url(./assets/images/beach.webp)"; 
-})
+});
 
 //Reset button
 resetButton.addEventListener("click", function() {
@@ -148,29 +140,27 @@ resetButton.addEventListener("click", function() {
   canvas.setAttribute('width', canvas.parentNode.offsetWidth);
   canvas.setAttribute('height', canvas.parentNode.offsetHeight);
   ctx = canvas.getContext("2d");
-  w = ctx.clientWidth;
-  h = ctx.clientHeight;
   ctx.drawImage(img, 0, 0);
-})
+});
 
 //Help button
 helpButton.addEventListener("click", function() {
   document.getElementById("help-pop").classList.toggle("active");
-})
+});
 
 //Close button
 closeButton.addEventListener("click", function() {
   document.getElementById("help-pop").classList.toggle("active");
-})
+});
 
 //Closing help box by clicking anywhere off it
 clickOff.addEventListener("click", function() {
   document.getElementById("help-pop").classList.toggle("active");
-})
+});
 
 //Another expected way to close the pop-up window
 document.addEventListener("keydown", function(e) {
   if(e.key === "Escape") {
     document.getElementById("help-pop").classList.toggle("active");
   }
-})
+});
