@@ -101,6 +101,7 @@ let beachButton = document.getElementById("selection-three");
 let resetButton = document.getElementById("reset");
 let helpButton = document.getElementById("help");
 let closeButton = document.getElementById("close-help")
+let clickOff = document.getElementById("overlay-one")
 
 // Forest button
 forestButton.addEventListener("click", function() {
@@ -160,4 +161,16 @@ helpButton.addEventListener("click", function() {
 //Close button
 closeButton.addEventListener("click", function() {
   document.getElementById("help-pop").classList.toggle("active");
+})
+
+//Closing help box by clicking anywhere off it
+clickOff.addEventListener("click", function() {
+  document.getElementById("help-pop").classList.toggle("active");
+})
+
+//Another expected way to close the pop-up window
+document.addEventListener("keydown", function(e) {
+  if(e.key === "Escape") {
+    document.getElementById("help-pop").classList.toggle("active");
+  }
 })
