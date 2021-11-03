@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background-color: pink;
+    background-color: black;
     color: white;
     font-family: 'Montserrat';
     height: 100vh;
@@ -43,6 +43,7 @@ Credited in testing.md*/
     margin-top: 1%; 
     letter-spacing: 1px;
     font-weight: 200;
+    margin-bottom: 0;
 }
 
 #logo {
@@ -51,10 +52,9 @@ Credited in testing.md*/
     align-content: center;
     justify-content: center;
     display: flex;
-    margin-top: 0.5%;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    z-index: 1;
 }
 
 /*various functionalities included for different browsers as detailed, code taken from Stackoverflow, linked in README*/
@@ -188,4 +188,33 @@ hr:before {
     box-shadow: 0px 4px 15px rgba(0, 191, 255, 1);
 }
 
+/* Media Queries */
 
+@media screen and (max-height: 850px) {
+    
+    #selection-text {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 760px) {
+
+    #reset-area {
+        padding-top: 5px;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #theme-choice {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 600px) {
+
+    #game-instructions {
+        display: none;
+    }
+}
