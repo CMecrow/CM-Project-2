@@ -59,16 +59,20 @@ canvas.addEventListener('mouseup', function (e){
 
 //When touched, sets isPress to true and calculates mouse co-ordinates
 canvas.addEventListener('touchstart', function (e){
+  e.preventDefault();
+  var touch = e.touches[0];
   isPress = true;
-  old = {x: e.clientX - ctx.canvas.offsetLeft, y: e.clientY - ctx.canvas.offsetTop};
+  old = {x: touch.clientX - ctx.canvas.offsetLeft, y: touch.clientY - ctx.canvas.offsetTop};
 });
 
 //When the touch moves, tracks co-ordinates, sets the drawing parameters
 canvas.addEventListener('touchmove', function (e){
   if (isPress) {
-    var x = e.clientX - ctx.canvas.offsetLeft;
-    var y = e.clientY - ctx.canvas.offsetTop;
+    var touch = e.touches[0];
+    var x = touch.clientX - ctx.canvas.offsetLeft;
+    var y = touch.clientY - ctx.canvas.offsetTop;
     ctx.globalCompositeOperation = 'destination-out';
+    e.preventDefault();
 
     ctx.beginPath();
     ctx.arc(x, y, 40, 0, 2 * Math.PI);
