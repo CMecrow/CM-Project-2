@@ -199,8 +199,6 @@ hr:before {
 
 /* Help popup */
 
-/* Media Queries */
-
 .popup .overlay {
     position: fixed;
     top: 0px;
@@ -213,6 +211,7 @@ hr:before {
 }
 
 .popup .help-content {
+    font-family: "Quicksand";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -223,15 +222,26 @@ hr:before {
     z-index: 2; 
     text-align: center;
     padding: 0;
+    padding-bottom: 30px;
     box-sizing: border-box;
     color: black;
+}
+
+.help-content h1 {
+    padding-top: 30px;
+}
+
+.help-content ul li {
+    text-align: left;
+    padding-bottom: 5px;
+    padding-right: 10px;
 }
 
 .popup .close-pop {
     cursor: pointer;
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 10px;
+    top: 10px;
     width: 30px;
     height: 30px;
     background: #222;

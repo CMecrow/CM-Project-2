@@ -14,7 +14,7 @@
 - The original plan had been to have a line displayed underneath the site tital right across the page, but this again looked a bit cold and not very attractive so I found a solution to implement a gradient across the line which made the overall appearance more pleasing.
 
 ## Theme choice
-- When creating the buttons for the user to choose the theme of the game, it became clear that it wouldn't be imediatley clear to the user that they could make any changes. To help remedy this I added a pointer style to the cursor when the buttons were mouseovered, applying the convention that a pointer cursor indicates that something will happen should that image be pressed.
+- When creating the buttons for the user to choose the theme of the game, it became clear that it wouldn't be imediatley clear to the user that they could make any changes. To help remedy this I added a pointer style to the cursor when the buttons were mouseovered, applying the convention that a pointer cursor indicates that something will happen should that image be pressed. I also added mouseover effects to the buttons, to make them more visually appealing and to further demonstrate that they were interactable for the user.
 
 ## Game area
 - I had difficulty in getting the game-area div to fill a large percentage of the screen, and it was instead stuck on around 350 px. I realised that the body was actually also at this height so inserted a 'vh' measurement to the div, so it could take its measurement in relation to an existing measurement, ie the height of the viewport. This fixed the problem.
@@ -22,3 +22,9 @@
 
 ## Mobile use
 - The original code was only functional on 'mousedown' and 'mousemove' event listeners so I had to create touch equivilents to have the game functional on touch devices. At first I just copied the code with the new eventlisteners but this did not work in testing. This gave me quite a large amount of trouble until I stumbled on [this Stackoverflow post](https://stackoverflow.com/questions/43936084/how-to-make-mousemove-event-working-for-touchscreen-with-touchmove), which explained that there is no clientX or clientY properties on touch events.
+
+## Button Icons
+- To help the user understand what each button may do at a glance I added small images to the theme selection buttons, along with a coloured box shadow effect on mouseover, green for the forest button, blue for the mountains and yellow for the beach. For the reset and help buttons I used expected icons from [fontawesome](https://fontawesome.com/), both icons clearly indicating a 'reset' and 'help' message.
+
+## Help box
+- I had not originally planned to implement a 'help' feature to the page, instead making sure there were instructions available on the page to guide the user. For example, the theme selection text 'Select your theme' and 'Where shall we unwind today?' with regards to theme and also the instructions underneath the game area. However when scaling the site for smaller touch devices, the instructions took up too much room on the page but I considered them too important to just remove altogether. Instead I found a simple walkthrough on creating a simple pop-up [here](https://www.youtube.com/watch?v=iE_6pQ3RlZU). I used this as way for the user to get the same information without it taking away space on the page for the game.
