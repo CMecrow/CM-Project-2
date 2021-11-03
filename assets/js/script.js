@@ -98,7 +98,9 @@ canvas.addEventListener('touchend', function (e){
 let forestButton = document.getElementById("selection-one");
 let mountainButton = document.getElementById("selection-two");
 let beachButton = document.getElementById("selection-three");
-let resetButton = document.getElementById("reset")
+let resetButton = document.getElementById("reset");
+let helpButton = document.getElementById("help");
+let closeButton = document.getElementById("close-help")
 
 // Forest button
 forestButton.addEventListener("click", function() {
@@ -148,4 +150,14 @@ resetButton.addEventListener("click", function() {
   w = ctx.clientWidth;
   h = ctx.clientHeight;
   ctx.drawImage(img, 0, 0);
+})
+
+//Help button
+helpButton.addEventListener("click", function() {
+  document.getElementById("help-pop").classList.toggle("active");
+})
+
+//Close button
+closeButton.addEventListener("click", function() {
+  document.getElementById("help-pop").classList.toggle("active");
 })

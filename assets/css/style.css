@@ -181,14 +181,76 @@ hr:before {
 }
 
 #reset {
-    font-size: 150%;
+    font-size: 120%;
 }
 
 #reset:hover {
     box-shadow: 0px 4px 15px rgba(0, 191, 255, 1);
 }
 
+#help {
+    font-size: 150%;
+    margin-left: 20px;
+}
+
+#help:hover {
+    box-shadow: 0px 4px 15px rgb(255, 116, 236);
+}
+
+/* Help popup */
+
 /* Media Queries */
+
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+    display: none;
+}
+
+.popup .help-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #FFFFFF;
+    height: auto;
+    width: 300px;
+    z-index: 2; 
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    color: black;
+}
+
+.popup .close-pop {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    text-align: center;
+    border-radius: 50%;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .help-content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
 
 @media screen and (max-height: 850px) {
     
