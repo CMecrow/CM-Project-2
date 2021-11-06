@@ -27,7 +27,7 @@ img.onload = function frostImage() {
 let isPress = false;
 let old = null;
 
-// DESKTOP USE
+//DESKTOP USE
 
 //When clicked, sets isPress to true and calculates mouse co-ordinates
 canvas.addEventListener('mousedown', function (e){
@@ -57,12 +57,12 @@ canvas.addEventListener('mousemove', function (e){
   }
 });
 
-// No longer drawing when mouse isn't pressed
+//No longer drawing when mouse isn't pressed
 canvas.addEventListener('mouseup', function (e){
   isPress = false;
 });
 
-// MOBILE USE
+//MOBILE USE
 
 //When touched, sets isPress to true and calculates mouse co-ordinates
 canvas.addEventListener('touchstart', function (e){
@@ -96,12 +96,12 @@ canvas.addEventListener('touchmove', function (e){
   }
 });
 
-// No longer drawing when touch isn't active
+//No longer drawing when touch isn't active
 canvas.addEventListener('touchend', function (e){
   isPress = false;
 });
 
-// Variables for buttons to select themes
+//Variables for buttons to select themes
 const forestButton = document.getElementById("forest-btn");
 const mountainButton = document.getElementById("mountain-btn");
 const beachButton = document.getElementById("beach-btn");
@@ -110,21 +110,21 @@ const helpButton = document.getElementById("help");
 const closeButton = document.getElementById("close-help");
 const clickOff = document.getElementById("overlay-one");
 
-// Forest button
+//Forest button
 forestButton.addEventListener("click", function() {
   frostImage();
   document.getElementById("theme-selected").innerHTML= "Forest";
   document.getElementById("game-area").style.backgroundImage="url(./assets/images/forest.webp)"; 
 });
 
-// Mountain button
+//Mountain button
 mountainButton.addEventListener("click", function() {
   frostImage();
   document.getElementById("theme-selected").innerHTML= "Mountains";
   document.getElementById("game-area").style.backgroundImage="url(./assets/images/mountains.webp)"; 
 });
 
-// Beach button
+//Beach button
 beachButton.addEventListener("click", function() {
   frostImage();
   document.getElementById("theme-selected").innerHTML= "Beach";
