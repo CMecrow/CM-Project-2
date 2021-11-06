@@ -156,7 +156,8 @@ hr:before {
     width: 90%;
     overflow: hidden;
     height: 55vh;
-    background-image: url(../images/sea.webp);    
+    background-image: url(../images/sea.webp);   
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
