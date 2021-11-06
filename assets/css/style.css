@@ -284,11 +284,19 @@ hr:before {
     #theme-choice {
         display: none;
     }
+
+    #button-area {
+        padding-bottom: 10px;
+    }
 }
 
 @media screen and (max-height: 600px) {
 
     #game-instructions {
         display: none;
+    }
+
+    #reset-area {
+        padding-top: 20px;
     }
 }
