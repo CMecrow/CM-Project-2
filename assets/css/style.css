@@ -170,11 +170,9 @@ hr:before {
 #game-instructions {
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 2%;
 }
 
 #reset-area {
-    padding-top: 20px;
     display: flex;
     justify-content: center;
     align-content: center;
