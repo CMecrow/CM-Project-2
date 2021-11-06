@@ -3,6 +3,9 @@
 ## Colour choice
 - I decided to use a black background to maximise contrast on the site, both for accessiblity and to fit the theme of the site, clarity. The white text really jumps out on a black background and lends itself to a minimalistic page, which had always been the plan from the wireframes.
 
+## Background image on load
+- The original idea for the initial background image, before a theme was selected, was to have the image of frost repeated. This however would look strange if the user interacted with the canvas before selecting a theme. I therefore changed the image to another calming picture so the game could be played straight away before a theme is selected. A better implementation of this would be to include game instructions in a pleasant style on the initial load image, directing the user to make a choice on theme. This wasn't implemented as any typography attempted looked clunky and forced, rather than integrating with the image at all.
+
 ## Text
 - I quickly found through testing that there must be some way of blocking text on the sight being highlighted by the user, should their cursor move out of the canvas element while the mouse is clicked. I found a way of implementing this through css, documented [here](https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting). A possible downside of this would be that the small amount of text is now not easily copied and pasted into some sort of translate service should the user not be a native speaker.
 

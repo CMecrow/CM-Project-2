@@ -157,6 +157,8 @@ hr:before {
     overflow: hidden;
     height: 55vh;
     background-image: url(../images/sea.webp);    
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #canvas-image {
