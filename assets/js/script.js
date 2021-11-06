@@ -1,8 +1,8 @@
 //Variables for frost image onto canvas
-var url = "./assets/images/frost.webp";
-var canvas = document.getElementById("canvas-image");
-var ctx = canvas.getContext('2d');
-var img = new Image();
+const url = "./assets/images/frost.webp";
+let canvas = document.getElementById("canvas-image");
+let ctx = canvas.getContext('2d');
+let img = new Image();
 img.src = url;
 
 /**Gets width and height from the parent div along with positioning, draws image*/
@@ -15,8 +15,8 @@ img.onload = function frostImage() {
 };
 
 //isPress is false so that the effect only occurs when the mousedown event is active
-var isPress = false;
-var old = null;
+let isPress = false;
+let old = null;
 
 // DESKTOP USE
 
@@ -29,8 +29,8 @@ canvas.addEventListener('mousedown', function (e){
 //When the mouse moves, tracks co-ordinates, sets the drawing parameters
 canvas.addEventListener('mousemove', function (e){
   if (isPress) {
-    var x = e.clientX - ctx.canvas.offsetLeft;
-    var y = e.clientY - ctx.canvas.offsetTop;
+    const x = e.clientX - ctx.canvas.offsetLeft;
+    const y = e.clientY - ctx.canvas.offsetTop;
     ctx.globalCompositeOperation = 'destination-out';
 
     ctx.beginPath();
@@ -58,7 +58,7 @@ canvas.addEventListener('mouseup', function (e){
 //When touched, sets isPress to true and calculates mouse co-ordinates
 canvas.addEventListener('touchstart', function (e){
   e.preventDefault();
-  var touch = e.touches[0];
+  let touch = e.touches[0];
   isPress = true;
   old = {x: touch.clientX - ctx.canvas.offsetLeft, y: touch.clientY - ctx.canvas.offsetTop};
 });
@@ -66,9 +66,9 @@ canvas.addEventListener('touchstart', function (e){
 //When the touch moves, tracks co-ordinates, sets the drawing parameters
 canvas.addEventListener('touchmove', function (e){
   if (isPress) {
-    var touch = e.touches[0];
-    var x = touch.clientX - ctx.canvas.offsetLeft;
-    var y = touch.clientY - ctx.canvas.offsetTop;
+    let touch = e.touches[0];
+    const x = touch.clientX - ctx.canvas.offsetLeft;
+    const y = touch.clientY - ctx.canvas.offsetTop;
     ctx.globalCompositeOperation = 'destination-out';
     e.preventDefault();
 
@@ -93,13 +93,13 @@ canvas.addEventListener('touchend', function (e){
 });
 
 // Variables for buttons to select themes
-var forestButton = document.getElementById("forest-btn");
-var mountainButton = document.getElementById("mountain-btn");
-var beachButton = document.getElementById("beach-btn");
-var resetButton = document.getElementById("reset");
-var helpButton = document.getElementById("help");
-var closeButton = document.getElementById("close-help");
-var clickOff = document.getElementById("overlay-one");
+const forestButton = document.getElementById("forest-btn");
+const mountainButton = document.getElementById("mountain-btn");
+const beachButton = document.getElementById("beach-btn");
+const resetButton = document.getElementById("reset");
+const helpButton = document.getElementById("help");
+const closeButton = document.getElementById("close-help");
+const clickOff = document.getElementById("overlay-one");
 
 // Forest button
 forestButton.addEventListener("click", function() {
