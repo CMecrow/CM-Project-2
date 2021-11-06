@@ -5,6 +5,15 @@ let ctx = canvas.getContext('2d');
 let img = new Image();
 img.src = url;
 
+/**Main function for inserting frost image onto canvas*/
+function frostImage() {
+  canvas = document.getElementById('canvas-image');
+  canvas.setAttribute('width', canvas.parentNode.offsetWidth);
+  canvas.setAttribute('height', canvas.parentNode.offsetHeight);
+  ctx = canvas.getContext("2d");
+  ctx.drawImage(img, 0, 0);
+}
+
 /**Gets width and height from the parent div along with positioning, draws image*/
 img.onload = function frostImage() {
   canvas = document.getElementById('canvas-image');
@@ -103,44 +112,28 @@ const clickOff = document.getElementById("overlay-one");
 
 // Forest button
 forestButton.addEventListener("click", function() {
-  canvas = document.getElementById('canvas-image');
-  canvas.setAttribute('width', canvas.parentNode.offsetWidth);
-  canvas.setAttribute('height', canvas.parentNode.offsetHeight);
-  ctx = canvas.getContext("2d");
-  ctx.drawImage(img, 0, 0);
+  frostImage();
   document.getElementById("theme-selected").innerHTML= "Forest";
   document.getElementById("game-area").style.backgroundImage="url(./assets/images/forest.webp)"; 
 });
 
 // Mountain button
 mountainButton.addEventListener("click", function() {
-  canvas = document.getElementById('canvas-image');
-  canvas.setAttribute('width', canvas.parentNode.offsetWidth);
-  canvas.setAttribute('height', canvas.parentNode.offsetHeight);
-  ctx = canvas.getContext("2d");
-  ctx.drawImage(img, 0, 0);
+  frostImage();
   document.getElementById("theme-selected").innerHTML= "Mountains";
   document.getElementById("game-area").style.backgroundImage="url(./assets/images/mountains.webp)"; 
 });
 
 // Beach button
 beachButton.addEventListener("click", function() {
-  canvas = document.getElementById('canvas-image');
-  canvas.setAttribute('width', canvas.parentNode.offsetWidth);
-  canvas.setAttribute('height', canvas.parentNode.offsetHeight);
-  ctx = canvas.getContext("2d");
-  ctx.drawImage(img, 0, 0);
+  frostImage();
   document.getElementById("theme-selected").innerHTML= "Beach";
   document.getElementById("game-area").style.backgroundImage="url(./assets/images/beach.webp)"; 
 });
 
 //Reset button
 resetButton.addEventListener("click", function() {
-  canvas = document.getElementById('canvas-image');
-  canvas.setAttribute('width', canvas.parentNode.offsetWidth);
-  canvas.setAttribute('height', canvas.parentNode.offsetHeight);
-  ctx = canvas.getContext("2d");
-  ctx.drawImage(img, 0, 0);
+  frostImage();
 });
 
 //Help button
