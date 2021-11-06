@@ -93,9 +93,9 @@ canvas.addEventListener('touchend', function (e){
 });
 
 // Variables for buttons to select themes
-var forestButton = document.getElementById("selection-one");
-var mountainButton = document.getElementById("selection-two");
-var beachButton = document.getElementById("selection-three");
+var forestButton = document.getElementById("forest-btn");
+var mountainButton = document.getElementById("mountain-btn");
+var beachButton = document.getElementById("beach-btn");
 var resetButton = document.getElementById("reset");
 var helpButton = document.getElementById("help");
 var closeButton = document.getElementById("close-help");

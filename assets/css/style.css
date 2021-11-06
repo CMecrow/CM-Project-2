@@ -98,28 +98,28 @@ hr:before {
     box-shadow: 0px 2px 15px rgba(255, 255, 255, 0.5);
 }
 
-#selection-one:hover {
+#forest-btn:hover {
     box-shadow: 0px 4px 15px rgba(34, 139, 34, 1);
 }
 
-#selection-two:hover {
+#mountain-btn:hover {
     box-shadow: 0px 4px 15px rgba(0, 191, 255, 1);
 }
 
-#selection-three:hover {
+#beach-btn:hover {
     box-shadow: 0px 4px 15px rgba(255, 215, 0, 1);
 }
 
-#selection-one {
+#forest-btn {
     background-image: url(../images/forestb.jpg);
 }
 
-#selection-two {
+#mountain-btn {
     margin-left: 20px;
     background-image: url(../images/mountainsb.jpg);
 }
 
-#selection-three {
+#beach-btn {
     margin-left: 20px;
     background-image: url(../images/beachb.jpg); 
 }
