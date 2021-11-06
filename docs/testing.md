@@ -26,6 +26,13 @@
 ## Mobile use
 - The original code was only functional on 'mousedown' and 'mousemove' event listeners so I had to create touch equivilents to have the game functional on touch devices. At first I just copied the code with the new eventlisteners but this did not work in testing. This gave me quite a large amount of trouble until I stumbled on [this Stackoverflow post](https://stackoverflow.com/questions/43936084/how-to-make-mousemove-event-working-for-touchscreen-with-touchmove), which explained that there is no clientX or clientY properties on touch events.
 
+## Media Queries used
+- Because a lot of the css measurements were done with regards to percentages and viewheights, the site maintains it's integrity until under 250px in width. This should be ample space for the vast majority of mobile devices so no queries were added with regards to width.
+- Height however was more of an issue and the site had to be adjusted on the following breakpoints:
+- 850px - content become condensed and cramped so the tagline of 'Where shall we unwind today' was hidden. This tagline served a similar function for the user as the already present 'Select your theme' line just below, but had been kept as it continued the overall feel and tone of the website.
+- 760px - same issue as above, so this time the site 'logo' is hidden, along with the prompt of 'select your theme'. It was at this point in development that the 'help' button was added at the bottom of the page, because when these two discussed prompts are hidden, it is no longer obvious to the user, what choice they need to make.
+- 600px - continuation of the above, the site instructions are now hidden. This should not cause an issue for the user as the help button is now in place, providing the user with instruction on how to interact with the page.
+
 ## Button Icons
 - To help the user understand what each button may do at a glance I added small images to the theme selection buttons, along with a coloured box shadow effect on mouseover, green for the forest button, blue for the mountains and yellow for the beach. For the reset and help buttons I used expected icons from [fontawesome](https://fontawesome.com/), both icons clearly indicating a 'reset' and 'help' message.
 

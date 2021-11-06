@@ -262,6 +262,8 @@ hr:before {
     transform: translate(-50%, -50%) scale(1);
 }
 
+/* Media Queries, detailed in testing */
+
 @media screen and (max-height: 850px) {
     
     #selection-text {
