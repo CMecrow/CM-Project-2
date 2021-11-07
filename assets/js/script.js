@@ -57,6 +57,11 @@ canvas.addEventListener('mousemove', function (e){
   }
 });
 
+//Fix for bug #1 detailed in testing
+window.addEventListener('mouseup', function(e) {
+  isPress = false;
+});
+
 //No longer drawing when mouse isn't pressed
 canvas.addEventListener('mouseup', function (e){
   isPress = false;
