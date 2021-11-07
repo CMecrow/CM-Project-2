@@ -38,3 +38,7 @@
 
 ## Help box
 - I had not originally planned to implement a 'help' feature to the page, instead making sure there were instructions available on the page to guide the user. For example, the theme selection text 'Select your theme' and 'Where shall we unwind today?' with regards to theme and also the instructions underneath the game area. However when scaling the site for smaller touch devices, the instructions took up too much room on the page but I considered them too important to just remove altogether. Instead I found a simple walkthrough on creating a simple pop-up [here](https://www.youtube.com/watch?v=iE_6pQ3RlZU). I used this as way for the user to get the same information without it taking away space on the page for the game.
+
+## Other bugs found
+- #1 Bug found on desktop where the user could click and drag to draw on the canvas, the mouse could then leave the canvas area while clicked, release the click, then when the cursor was brought back into the canvas, drawing would continue. An eventlistener was added to the window to reinforce the isPress = false variable.
+- #2 Bug where the mouse can be clicked on the canvas, the cursor leave the canvas, then if the cursor re enters the canvas elsewhere while clicked, the drawing line will jump across to the new co-ordinates.
