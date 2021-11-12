@@ -3,7 +3,7 @@ As a developer, I've been tasked with creating a website that houses a mindfulne
 
 Please see UX document available [here]() for further information on background and initial design brief, along with initial wireframe concepts [here]().
 
-![https://i.imgur.com/oXwifhH](https://i.imgur.com/oXwifhH.jpg "Site responsiveness)
+![https://i.imgur.com/oXwifhH](https://i.imgur.com/oXwifhH.jpg "Site responsiveness")
 
 ---
 
@@ -16,17 +16,20 @@ Please see UX document available [here]() for further information on background 
 ![https://i.imgur.com/kZ1zat4](https://i.imgur.com/kZ1zat4.jpg "Site header")
 
 - ### Mindfulness JavaScript Game
-- The game area is where the goals of the site are achieved. 
+- The game area is where the goals of the site are achieved.
+- The game area has been built using vh and % dimensions so it will always be the main draw of the page. This is important because due to the nature of the game on a touch device, there can be no scrolling present, as discussed in the [testing file](https://github.com/CMecrow/CM-Project-2/blob/main/docs/testing.md).
+#### Theme Selection
+- The user is prompted to select a theme for the game through both taglines of 'Where shall we unwind today?' and 'Select your theme'. The buttons are designed to display to the user that they are interactive by changing the cursor to a pointer when mouseovered and also via drop shadow changes. If none of this is clear to the user, they can also get this information via the help button at the bottom of the section.
+- It is important to have the 'Select your theme' text change to match the selection, ie 'Forest', 'Mountains' or 'Beach' because the chosen image is covered via the frost image, so it may not be clear to the user that their selection has occured at all. 
 
 ![https://i.imgur.com/uknjy9M](https://i.imgur.com/uknjy9M.jpg "Game area")
 
-- ### Site footer
-
 ## Future Features
 ### Future feature ideas
+- 
 
 ## Testing
-Separate testing file linked [here]().
+Separate testing file linked [here]((https://github.com/CMecrow/CM-Project-2/blob/main/docs/testing.md)).
 
 ### Validator Testing
 HTML -
@@ -34,7 +37,7 @@ CSS -
 JavaScript -
 
 ### Unfixed bugs
-Discussed on testing page [here]().
+Discussed on testing page [here]((https://github.com/CMecrow/CM-Project-2/blob/main/docs/testing.md)).
 
 ---
 
