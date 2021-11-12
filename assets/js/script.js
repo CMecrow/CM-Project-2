@@ -97,7 +97,6 @@ canvas.addEventListener('touchmove', function (e){
     ctx.stroke();
 
     old = {x: x, y: y};
-
   }
 });
 
