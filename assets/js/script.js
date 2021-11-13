@@ -57,13 +57,13 @@ canvas.addEventListener('mousemove', function (e){
   }
 });
 
-//Fix for bug #1 detailed in testing
+//Fix for bug #1 detailed in testing. Changing from canvas to window
 window.addEventListener('mouseup', function(e) {
   isPress = false;
 });
 
-//No longer drawing when mouse isn't pressed
-canvas.addEventListener('mouseup', function (e){
+//Fix for bug #2 detailed in testing.
+canvas.addEventListener('mouseout', function (e){
   isPress = false;
 });
 
