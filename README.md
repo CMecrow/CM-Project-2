@@ -7,6 +7,21 @@ Please see initial design UX document available [here](https://github.com/CMecro
 
 ---
 
+## User Stories
+- ### First time user
+  - A first time visitor should be able to identify the purpose of the site through site name / any text imediately present.
+  - A first time visitor should be able to find easy access to further information about the site, in this case via the help button.
+  - A first time visitor should be instantly able to interact with the site and have the site display a responsiveness and an indication to the user that their actions have had an effect.
+  - A first time visitor should be able to see which parts of the site they're able to interact with.
+
+- ### Returning user
+  - A returning user should have the same experience that they had on their first visit that's influenced them to return to the site.
+  - A returning user should be able to select different themes for the page, altering the background image they'd uncovered last time.
+  - A returning user should have easy access to a refresher on how to interact with the site.
+
+- ### Frequent user
+  - A frequent user may require greater customisation of the game, which could be implemented in a later deployment. This will be discussed in the future features section.
+
 ## Features
 - ### Site header
 - Site name 'Clarity' is central to the page to be the main initial focus. This is to provide a memorable and recognisable name / brand.
@@ -26,7 +41,8 @@ Please see initial design UX document available [here](https://github.com/CMecro
 
 ## Future Features
 ### Future feature ideas
-- 
+- As mentioned in the frequent visitor user stories, a level of personalisation or customisation could be implemented into the game at a later date. For example, a tool could be made so the user could select the thickness of their stroke, or potentially apply a different pattern to it.
+- This customisation could then extend into the user selecting different images to clear (at present the frost image), or different images to reveal. This could either be done via the addition of more theme choices, or via an option for the user to upload their own images.
 
 ## Testing
 Separate testing file linked [here]((https://github.com/CMecrow/CM-Project-2/blob/main/docs/testing.md)).
