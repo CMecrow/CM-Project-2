@@ -1,7 +1,7 @@
 # Clarity
 As a developer, I've been tasked with creating a website that houses a mindfulness game built with JavaScript, giving the user a calming and pleasant experience.
 
-Please see UX document available [here]() for further information on background and initial design brief, along with initial wireframe concepts [here]().
+Please see initial design UX document available [here](https://github.com/CMecrow/CM-Project-2/blob/main/docs/clarity_ux.md) for further information on background and initial design brief, along with initial wireframe concepts [here](https://github.com/CMecrow/CM-Project-2/blob/main/docs/clarity_wireframes.pdf).
 
 ![https://i.imgur.com/oXwifhH](https://i.imgur.com/oXwifhH.jpg "Site responsiveness")
 
