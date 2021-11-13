@@ -44,13 +44,22 @@ Please see initial design UX document available [here](https://github.com/CMecro
 - As mentioned in the frequent visitor user stories, a level of personalisation or customisation could be implemented into the game at a later date. For example, a tool could be made so the user could select the thickness of their stroke, or potentially apply a different pattern to it.
 - This customisation could then extend into the user selecting different images to clear (at present the frost image), or different images to reveal. This could either be done via the addition of more theme choices, or via an option for the user to upload their own images.
 
-## Testing
-Separate testing file linked [here]((https://github.com/CMecrow/CM-Project-2/blob/main/docs/testing.md)).
+## Technology Used
+
+### Testing
+The site was tested both manually and through validators / automatic resources. Separate testing file linked [here](https://github.com/CMecrow/CM-Project-2/blob/main/docs/testing.md).
 
 ### Validator Testing
 HTML -
 CSS -
 JavaScript -
+
+### Accessibility
+The site's overall accessibility was an area that was considered throughout the project.
+  - Various 'handwritten' styled fonts were disregarded because they may be more difficult to read for users.
+  - A strong contrast is maintained throughout the site between background colour and font colour
+  - Aria-labels have been implemented where possible on the buttons on the page.
+  - The overall semantic structure of the HTML code.
 
 ### Unfixed bugs
 Discussed on testing page [here]((https://github.com/CMecrow/CM-Project-2/blob/main/docs/testing.md)).
@@ -64,5 +73,11 @@ The site was deployed to GitHub pages. The steps to deploy are as follows: - In 
 
 ## Credits
 ### Content
+Header styling [here.](https://stackoverflow.com/questions/9437400/css-fade-out-horizontal-rule-line-styled-div-effect-without-images)
+Blocking text highlighting [here.](https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting)
+Mouse co-ordinate help [here.](https://stackoverflow.com/questions/39784153/mouse-pointer-coordinates-and-canvas-coordinates-not-matching)
+Implementing touch eventlisenters [here.](https://stackoverflow.com/questions/43936084/how-to-make-mousemove-event-working-for-touchscreen-with-touchmove)
+Help box pop-up [here.](https://www.youtube.com/watch?v=iE_6pQ3RlZU).
 
 ### Media
+All images were taken from [pexels.com](https://www.pexels.com/), a free stock photo resource.
