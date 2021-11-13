@@ -52,7 +52,9 @@ The site was tested both manually and through validators / automatic resources. 
 
 ### Validator Testing
 HTML -
+
 CSS -
+
 JavaScript -
 
 ### Accessibility
@@ -75,9 +77,13 @@ The site was deployed to GitHub pages. The steps to deploy are as follows: - In 
 ## Credits
 ### Content
 Header styling [here.](https://stackoverflow.com/questions/9437400/css-fade-out-horizontal-rule-line-styled-div-effect-without-images)
+
 Blocking text highlighting [here.](https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting)
+
 Mouse co-ordinate help [here.](https://stackoverflow.com/questions/39784153/mouse-pointer-coordinates-and-canvas-coordinates-not-matching)
+
 Implementing touch eventlisenters [here.](https://stackoverflow.com/questions/43936084/how-to-make-mousemove-event-working-for-touchscreen-with-touchmove)
+
 Help box pop-up [here.](https://www.youtube.com/watch?v=iE_6pQ3RlZU).
 
 ### Media
