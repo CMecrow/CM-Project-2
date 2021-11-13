@@ -86,5 +86,9 @@ Implementing touch eventlisenters [here.](https://stackoverflow.com/questions/43
 
 Help box pop-up [here.](https://www.youtube.com/watch?v=iE_6pQ3RlZU).
 
+Icons taken from [fontawesome.com.](https://fontawesome.com/)
+
+Fonts taken from [Google fonts.](https://fonts.google.com/)
+
 ### Media
 All images were taken from [pexels.com](https://www.pexels.com/), a free stock photo resource.
