@@ -9,7 +9,7 @@ Please see initial design UX document available [here](https://github.com/CMecro
 
 ## User Stories
 - ### First time user
-  - A first time visitor should be able to identify the purpose of the site through site name / any text imediately present.
+  - A first time visitor should be able to identify the purpose of the site through site name / any text immediately present.
   - A first time visitor should be able to find easy access to further information about the site, in this case via the help button.
   - A first time visitor should be instantly able to interact with the site and have the site display a responsiveness and an indication to the user that their actions have had an effect.
   - A first time visitor should be able to see which parts of the site they're able to interact with.
@@ -34,8 +34,8 @@ Please see initial design UX document available [here](https://github.com/CMecro
 - The game area is where the goals of the site are achieved.
 - The game area has been built using vh and % dimensions so it will always be the main draw of the page. This is important because due to the nature of the game on a touch device, there can be no scrolling present, as discussed in the [testing file](https://github.com/CMecrow/CM-Project-2/blob/main/docs/testing.md).
 #### Theme Selection
-- The user is prompted to select a theme for the game through both taglines of 'Where shall we unwind today?' and 'Select your theme'. The buttons are designed to display to the user that they are interactive by changing the cursor to a pointer when mouseovered and also via drop shadow changes. If none of this is clear to the user, they can also get this information via the help button at the bottom of the section.
-- It is important to have the 'Select your theme' text change to match the selection, ie 'Forest', 'Mountains' or 'Beach' because the chosen image is covered via the frost image, so it may not be clear to the user that their selection has occured at all. 
+- The user is prompted to select a theme for the game through both tag lines of 'Where shall we unwind today?' and 'Select your theme'. The buttons are designed to display to the user that they are interactive by changing the cursor to a pointer when mouseovered and also via drop shadow changes. If none of this is clear to the user, they can also get this information via the help button at the bottom of the section.
+- It is important to have the 'Select your theme' text change to match the selection, ie 'Forest', 'Mountains' or 'Beach' because the chosen image is covered via the frost image, so it may not be clear to the user that their selection has occurred at all. 
 
 ![https://i.imgur.com/uknjy9M](https://i.imgur.com/uknjy9M.jpg "Game area")
 
