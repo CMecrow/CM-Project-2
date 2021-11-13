@@ -51,11 +51,11 @@ Please see initial design UX document available [here](https://github.com/CMecro
 The site was tested both manually and through validators / automatic resources. Separate testing file linked [here](https://github.com/CMecrow/CM-Project-2/blob/main/docs/testing.md).
 
 ### Validator Testing
-HTML -
+HTML - No errors when passing through HTML validator - [W3C validator](https://validator.w3.org/nu/)
 
-CSS -
+CSS - No errors were returned when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
 
-JavaScript -
+JavaScript - No errors were returned when passing through the official [JSHint](https://jshint.com/)
 
 ### Accessibility
 The site's overall accessibility was an area that was considered throughout the project.
@@ -65,7 +65,7 @@ The site's overall accessibility was an area that was considered throughout the 
   - The overall semantic structure of the HTML code.
 
 ### Unfixed bugs
-Discussed on testing page [here]((https://github.com/CMecrow/CM-Project-2/blob/main/docs/testing.md)).
+Discussed on testing page [here](https://github.com/CMecrow/CM-Project-2/blob/main/docs/testing.md).
 
 ---
 
