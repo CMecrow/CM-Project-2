@@ -43,6 +43,7 @@ Please see initial design UX document available [here](https://github.com/CMecro
 ### Future feature ideas
 - As mentioned in the frequent visitor user stories, a level of personalisation or customisation could be implemented into the game at a later date. For example, a tool could be made so the user could select the thickness of their stroke, or potentially apply a different pattern to it.
 - This customisation could then extend into the user selecting different images to clear (at present the frost image), or different images to reveal. This could either be done via the addition of more theme choices, or via an option for the user to upload their own images.
+- An improvement that could be made for before the images are loaded to the page would be the inclusion of some sort of loading icon or progress bar. This was not implemented at this stage because the loading times were not too long so it'd feel unnecessary. Were the site to grow and host more games and content however, potentially slowing down the overall load times, this could become required for good UX.
 
 ## Technology Used
 
