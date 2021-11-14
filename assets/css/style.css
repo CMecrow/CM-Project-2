@@ -11,15 +11,9 @@ html, body {
 }
 
 body {
-    background-color: black;
+    background-color: pink;
     color: white;
     font-family: 'Montserrat', Arial, sans-serif;
-}
-
-.bottom-btn {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
 }
 
 /*Included to stop text being highlighted is the user clicks and drags their cursor off the canvas element.
@@ -95,6 +89,8 @@ hr:before {
     padding-bottom: 4px;
 }
 .selection {
+    background-color: white;
+    color: black;
     height: 40px;
     width: 80px;
     cursor: pointer;
@@ -186,6 +182,7 @@ hr:before {
 
 #reset {
     font-size: 120%;
+    -webkit-appearance: none;
 }
 
 #reset:hover {
@@ -195,6 +192,7 @@ hr:before {
 #help {
     font-size: 150%;
     margin-left: 20px;
+    -webkit-appearance: none;
 }
 
 #help:hover {
