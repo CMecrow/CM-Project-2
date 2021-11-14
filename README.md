@@ -34,8 +34,10 @@ Please see initial design UX document available [here](https://github.com/CMecro
 - The game area is where the goals of the site are achieved.
 - The game area has been built using vh and % dimensions so it will always be the main draw of the page. This is important because due to the nature of the game on a touch device, there can be no scrolling present, as discussed in the [testing file](https://github.com/CMecrow/CM-Project-2/blob/main/docs/testing.md).
 #### Theme Selection
-- The user is prompted to select a theme for the game through both tag lines of 'Where shall we unwind today?' and 'Select your theme'. The buttons are designed to display to the user that they are interactive by changing the cursor to a pointer when mouseovered and also via drop shadow changes. If none of this is clear to the user, they can also get this information via the help button at the bottom of the section.
+- The user is prompted to select a theme for the game through both tag lines of 'Where shall we unwind today?' and 'Select your theme'. The buttons are designed to display to the user that they are interactive by changing the cursor to a pointer when mouseovered and also via drop shadow changes. If none of this is clear to the user, they can also get this information via the help button at the bottom of the section. The chosen drop shadow colour's match the colour scheme of the associated image, green for forest, yellow for beach for example.
 - It is important to have the 'Select your theme' text change to match the selection, ie 'Forest', 'Mountains' or 'Beach' because the chosen image is covered via the frost image, so it may not be clear to the user that their selection has occurred at all. 
+#### Reset and Help buttons
+- The icons chosen for both the reset and the help buttons are both following an expected convention for the user. The reset icon is synonymous with either reset or undo. In this context an undo option would not make much sense so the user can comfortably assume it's a reset button. The chosen hover drop shadow colour being red indicates an impactful interaction when pressed. The help icon chosen was a question mark in a circle, again synonymous with help or more information. This button provides both of those in the form of a 'how to play' pop up.
 
 ![https://i.imgur.com/uknjy9M](https://i.imgur.com/uknjy9M.jpg "Game area")
 
