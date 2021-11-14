@@ -7,14 +7,20 @@ html, body {
     padding: 0;
     border: none;
     height: 100%;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 body {
-    background-color: pink;
+    background-color: black;
     color: white;
     font-family: 'Montserrat', Arial, sans-serif;
 }
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    }
 
 /*Included to stop text being highlighted is the user clicks and drags their cursor off the canvas element.
 Credited in testing.md*/
@@ -270,6 +276,10 @@ hr:before {
 }
 
 @media screen and (max-height: 760px) {
+
+    html, body {
+        overflow: auto;
+    }
 
     #reset-area {
         padding-top: 5px;
