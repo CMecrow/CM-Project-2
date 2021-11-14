@@ -88,6 +88,7 @@ hr:before {
     align-content: center;
     padding-bottom: 4px;
 }
+
 .selection {
     background-color: white;
     color: black;
@@ -200,7 +201,6 @@ hr:before {
 }
 
 /* Help popup */
-
 .popup .overlay {
     position: fixed;
     top: 0px;
@@ -265,7 +265,6 @@ hr:before {
 }
 
 /* Media Queries, detailed in testing */
-
 @media screen and (max-height: 850px) {
 
     #game-area {
