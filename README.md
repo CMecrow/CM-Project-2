@@ -74,7 +74,7 @@ Discussed on testing page [here](https://github.com/CMecrow/CM-Project-2/blob/ma
 ---
 
 ## Deployment
-The site was deployed to GitHub pages. The steps to deploy are as follows: - In the GitHub repository, navigate to the Settings tab - From the source section drop-down menu, select the Master / Main Branch - Once the master or main branch has been selected, the page will automatically be refreshed with a detailed ribbon display to indicate the successful deployment. The live link can be found here.
+The site was deployed to GitHub pages. The steps to deploy are as follows: - In the GitHub repository, navigate to the Settings tab - From the source section drop-down menu, select the Master / Main Branch - Once the master or main branch has been selected, the page will automatically be refreshed with a detailed ribbon display to indicate the successful deployment. The live link can be found [here](https://cmecrow.github.io/CM-Project-2/index.html).
 
 ---
 
