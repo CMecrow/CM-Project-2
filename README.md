@@ -58,6 +58,11 @@ HTML - No errors when passing through HTML validator - [W3C validator](https://v
 CSS - No errors were returned when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
 
 JavaScript - No errors were returned when passing through the official [JSHint](https://jshint.com/)
+   The following metrics were returned:
+   - There are 17 functions in this file.
+   - Function with the largest signature take 1 arguments, while the median is 0.
+   - Largest function has 15 statements in it, while the median is 2.
+   - The most complex function has a cyclomatic complexity value of 2 while the median is 1.
 
 ### Accessibility
 The site's overall accessibility was an area that was considered throughout the project.
