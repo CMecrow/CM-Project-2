@@ -66,6 +66,8 @@ The site's overall accessibility was an area that was considered throughout the 
   - Aria-labels have been implemented where possible on the buttons on the page.
   - The overall semantic structure of the HTML code.
 
+![https://i.imgur.com/po0bOE4](https://i.imgur.com/po0bOE4.jpg "Lighthouse rating")
+
 ### Unfixed bugs
 Discussed on testing page [here](https://github.com/CMecrow/CM-Project-2/blob/main/docs/testing.md).
 
@@ -78,6 +80,9 @@ The site was deployed to GitHub pages. The steps to deploy are as follows: - In 
 
 ## Credits
 ### Content
+
+JavaScript canvas code base [here.](https://codepen.io/progrape/pen/XXBwWe)
+
 Header styling [here.](https://stackoverflow.com/questions/9437400/css-fade-out-horizontal-rule-line-styled-div-effect-without-images)
 
 Blocking text highlighting [here.](https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting)

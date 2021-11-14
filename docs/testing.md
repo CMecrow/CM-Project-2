@@ -21,7 +21,7 @@
 
 ## Game area
 - I had difficulty in getting the game-area div to fill a large percentage of the screen, and it was instead stuck on around 350 px. I realised that the body was actually also at this height so inserted a 'vh' measurement to the div, so it could take its measurement in relation to an established measurement rather than a percentage, ie the height of the viewport. This fixed the problem.
-- The imported code required modifying to work with an image this size and also to be responsive overall. Using the imported code, the frost image could be loaded but would be stretched when loaded from the frost image's dimensions. Instead it was better to set the canvas width to match that of the parent div, and at the same time include the offsetting of the div in the page. This was discovered [here](https://stackoverflow.com/questions/39784153/mouse-pointer-coordinates-and-canvas-coordinates-not-matching).
+- The imported code (available [here](https://codepen.io/progrape/pen/XXBwWe)) required modifying to work with an image this size and also to be responsive overall. Using the imported code, the frost image could be loaded but would be stretched when loaded from the frost image's dimensions. Instead it was better to set the canvas width to match that of the parent div, and at the same time include the offsetting of the div in the page. This was discovered [here](https://stackoverflow.com/questions/39784153/mouse-pointer-coordinates-and-canvas-coordinates-not-matching).
 
 ## Mobile use
 - The original code was only functional on 'mousedown' and 'mousemove' event listeners so I had to create touch equivalents to have the game functional on touch devices. At first I just copied the code with the new eventlisteners but this did not work in testing. This gave me quite a large amount of trouble until I stumbled on [this Stackoverflow post](https://stackoverflow.com/questions/43936084/how-to-make-mousemove-event-working-for-touchscreen-with-touchmove), which explained that there is no clientX or clientY properties on touch events.
@@ -39,9 +39,18 @@
 ## Help box
 - I had not originally planned to implement a 'help' feature to the page, instead making sure there were instructions available on the page to guide the user. For example, the theme selection text 'Select your theme' and 'Where shall we unwind today?' with regards to theme and also the instructions underneath the game area. However when scaling the site for smaller touch devices, the instructions took up too much room on the page but I considered them too important to just remove altogether. Instead I found a simple walk-through on creating a simple pop-up [here](https://www.youtube.com/watch?v=iE_6pQ3RlZU). I used this as way for the user to get the same information without it taking away space on the page for the game.
 
+## Browser testing
+- The deployed site has been tested manually on:
+  - Chrome
+  - Firefox
+  - Edge
+  - On mobile with Safari
+
 ## Other bugs found
 - #1 Bug found on desktop where the user could click and drag to draw on the canvas, the mouse could then leave the canvas area while clicked, release the click, then when the cursor was brought back into the canvas, drawing would continue. An eventlistener was added to the window to reinforce the isPress = false variable.
 - #2 Bug where the mouse can be clicked on the canvas, the cursor leave the canvas, then if the cursor re enters the canvas elsewhere while clicked, the drawing line will jump across to the new co-ordinates. The fix here required a compromise unfortunately. Either the line was drawn as described previously, but the user could keep the move clicked and continue to draw when re-entering the canvas, or the line would not be drawn as isPress would be declared false when the mouse left the canvas. This fix meant however that then the user would have to reclick on re-entering the canvas to declare isPress true. Both options have some merit but the line was considered worse UX overall, as it could stretch across a portion of the image that the user had not interacted with. The user has already had to click to begin drawing initially so having to reclick after leaving the canvas is not an unreasonable interaction to have to make. This bug is caused by line 50-53 in the JavaScript so only effects desktop use. A fix can be implemented by attempting to reset co-ordinates (old) on mouseout or mouseenter but this loses the functionality of line 50-53 which creates a smoothness when drawing on the canvas by pulling two sets of co-ordinates to draw from. This compromise could be avoided but it'd require a total restructure of the JavaScript code which was not suitable in this time frame.
 
 ## Lighthouse testing
 - From previous experience I saved the large images as .webp to reduce any loading times for the user when visiting the site. While testing I was happy with the overall load time of the page and images, though should the site grow larger in scope, it may be helpful to set up a loading icon to display until the main images are loaded, just to indicate to the user that parts of the site are not ready for use. The large images could also potentially be compressed to decrease load times though I did not feel this was necessary at this point.
+
+![https://i.imgur.com/po0bOE4](https://i.imgur.com/po0bOE4.jpg "Lighthouse rating")
